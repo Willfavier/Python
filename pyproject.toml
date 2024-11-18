@@ -1,0 +1,8 @@
+[project]
+name = "valorant_motivation"
+version = "0.1"
+authors = [
+	{name1 = "William Favier", email1= "william.favier@estaca.eu", name2 = "Xavier Maréchal", email2 = "xavier.marechal@estaca.eu"},
+]
+description = "Application affichant des citations motivantes aléatoires."
+readme = "README.md"
