@@ -1,0 +1,15 @@
+import unittest
+from unittest.mock import patch
+from app import afficher_citation  # Remplacez `app` par le nom de votre fichier Python
+
+class TestApp(unittest.TestCase):
+    @patch('app.choisir_phrase_depuis_fichier')
+    def test_afficher_citation(self, mock_choisir_phrase):
+        mock_choisir_phrase.return_value = "Une citation inspirante"
+        try:
+            afficher_citation()  # Tester si la fonction s'exécute sans erreur
+        except Exception as e:
+            self.fail(f"afficher_citation() a levé une exception : {e}")
+
+if __name__ == '__main__':
+    unittest.main()
